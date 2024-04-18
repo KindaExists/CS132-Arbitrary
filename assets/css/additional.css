@@ -57,7 +57,6 @@
     text-align: left;
 }
 
-
 .dataSetAttributes li span, .pill {
     border-style: none;
     border-radius: 9999px;
@@ -67,4 +66,43 @@
     color:#e8e8e8;
     text-shadow: none;
     margin-right: 0.5em;
+}
+
+.tagForm {
+    border-style : solid;
+    border-width: 0em 0em 0em 2em;
+    width:auto;
+    height:auto;
+    max-width: 1lw;
+    display:inline-block;
+    margin: 0.5lh auto;
+}
+
+.tagForm td{
+    text-align:right;
+    vertical-align:middle;
+}
+
+.tagForm .tagLabel {
+    text-align: left;
+    font-weight: bold;
+    font-size: x-large;
+    padding-left: 1em;
+    padding-right:2em;
+    display:inline-block;
+    line-height: normal;
+}
+
+.tag {
+    font-size: small;
+    font-weight:500;
+    background-color: #888888;
+    border-radius: 9999px;
+    padding:0.5em 2em;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+.reduceBottomMargin {
+    margin-bottom: 0.5lh;
 }
