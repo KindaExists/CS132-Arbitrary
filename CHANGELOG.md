@@ -1,13 +1,6 @@
 # Changelog
 
-## Overview Section Changes
+## General Changes
 
-    - moved background, questions, hypotheses, action plan to separate section
-
-## Background Section Changes
-
-    - added 
-
-## Data Collection Section Changes
-
-    - added Philippines to keyword
+    - added title
+    - fixed capitalization of spam texts
