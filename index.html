@@ -6,7 +6,7 @@
 -->
 <html lang="en">
 	<head>
-			<title>Sim Spam Slam</title>
+			<title>SIM Spam Slam</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -23,7 +23,7 @@
 					<li><a href="#background">Background</a></li>
 					<li><a href="#dataCollection">Collection</a></li>
 					<li><a href="#dataExploration">Exploration</a></li>
-					<li><a href="#methods">Methods</a></li>
+					<!-- <li><a href="#methods">Methods</a></li> -->
 					<li><a href="#results">Results</a></li>
 					<li><a href="#team">Team</a></li>
 				</ul>
@@ -41,10 +41,10 @@
 								<h1>
 									Hi. We are <strong>Arbitrary</strong>.
 								</h1>
-								<h1>
+								<h1 style = "font-size:2.75em">
 									This is our project,
 								</h1>
-								<h1>
+								<h1 style = "font-size: 3.5em;">
 									<strong> SIM Spam Slam</strong>
 								</h1>
 							</header>
@@ -74,7 +74,7 @@
 						</p>
 					</header>
 					<div class="row aln-center">
-						<div class="col-4 col-6-medium col-12-small col">
+						<div class="card col-4 col-6-medium col-12-small col">
 							<section class="box style1 boxMatch">
 								<img class="tile" src="images/sms-icon.png">
 								<h3><a href="https://www.philstar.com/business/2022/11/25/2226194/text-messaging-remains-relevant-philippines">SMS Relevancy</a></h3>
@@ -92,7 +92,7 @@
 								</p>
 							</section>
 						</div>
-						<div class="col-4 col-6-medium col-12-small col">
+						<div class="card col-4 col-6-medium col-12-small col">
 							<section class="box style1">
 								<img class="tile" src="images/tech-chip.png">
 								<h3>Preventive Measures</h3>
@@ -148,42 +148,44 @@
 							<h3 class="question">Utilize data science tools to identify the patterns and trends of Spam text content.</h3>
 						</div>
 					</div>
-					<footer>
-						<!-- <a href="https://docs.google.com/spreadsheets/d/1qfeeKcDPOK4uanmqMj5QxMkOqcvvSJ8LRvjnAAnBvwo/edit?usp=sharing" class="button">
+					<!-- <footer>
+						<a href="https://docs.google.com/spreadsheets/d/1qfeeKcDPOK4uanmqMj5QxMkOqcvvSJ8LRvjnAAnBvwo/edit?usp=sharing" class="button">
 							Visit the Data Set
-						</a> -->
-					</footer>
+						</a>
+					</footer> -->
 				</div>
 			</article>
 
-		<!-- Data -->
+		<!--! Data Collection -->
 			<article id="dataCollection" class="wrapper style3">
 				<div class="container">
 					<header class = "reduceBottomMargin">
 						<h2>How was the data collected?</h2>
-						<p>
-							The dataset used is a compiled set of two public datasets available on <a href="https://kaggle.com">Kaggle</a>. Both of these datasets contain Philippine spam messages personally received by these Kaggle users. Additionally, both datasets contain timestamps for when messages were received.
+						<p class = "x-large">
+							The dataset used is a compiled set of two public datasets available on <a href="https://kaggle.com">Kaggle</a>. 
+							Both of these datasets contain Philippine spam messages personally received and compiled by these Kaggle users. 
+							Additionally, both datasets contain timestamps for when messages were received.
 							<table class = "tagForm">
 								<tr>
 									<td class = "tagLabel">Keywords</td>
 									<!-- TAGS HERE -->
-									<td>
-										<span class = "tag">Text</span>
-										<span class = "tag">Spam</span>
-										<span class = "tag">SMS</span>
-										<span class = "tag">Registration</span>
-										<span class = "tag">Scam</span>
-										<span class = "tag">Philippines</span>
+									<td class = "tags">
+										<span>Text</span>
+										<span>Spam</span>
+										<span>SMS</span>
+										<span>Registration</span>
+										<span>Scam</span>
+										<span>Philippines</span>
 									</td>
 								</tr>
 							</table>
 						</p>
 					</header>
 					<div class="row aln-center">
-						<div class="col-4 col-6-medium col-12-small">
+						<div class="card col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-								<h3><a href="https://www.kaggle.com/datasets/scottleechua/ph-spam-marketing-sms-w-timestamps">Data Set 1</a></h3>
+								<img class = "tile" src="images/kaggle-log.png" alt="" />
+								<h3><a href="https://www.kaggle.com/datasets/scottleechua/ph-spam-marketing-sms-w-timestamps">Data Set A</a></h3>
 								<ul class = "dataSetAttributes">
 									<li><span>Author:</span> Scott Lee Chua</li>
 									<li><span>Date Start:</span>09/30/2022</li>
@@ -193,10 +195,10 @@
 								</ul>
 							</article>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
+						<div class="card col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="https://www.kaggle.com/datasets/bwandowando/philippine-spam-sms-messages">Data Set 2</a></h3>
+								<img class="tile" src="images/kaggle-log.png" alt="" />
+								<h3><a href="https://www.kaggle.com/datasets/bwandowando/philippine-spam-sms-messages">Data Set B</a></h3>
 								<ul class = "dataSetAttributes">
 									<li><span>Author:</span>BwandoWando</li>
 									<li><span>Date Start:</span>12/11/2022</li>
@@ -208,10 +210,16 @@
 						</div>
 					</div>
 					<footer>
-						<!-- <p style = "font-size: xx-large;">A total of 1069 entries after processing.</p> -->
+						<p class = "x-large">
+							The project's dataset was organized by applying Google sheets Regular Expressions on the SMS messages, 
+							decomposing/extrapolating information from existing data (Day of Week, message length, sender carrier, url, topic clusters).
+						</p>
 						<a href="https://docs.google.com/spreadsheets/d/1qfeeKcDPOK4uanmqMj5QxMkOqcvvSJ8LRvjnAAnBvwo/edit?usp=sharing" class="button">
-							Visit the Data Set
+							Visit the project's data set
 						</a>
+						<p style = "margin-top:2em" class = "x-large">
+							After processing, 1062 entries remained. Check out the <a href="#dataExploration">exploration</a> section for more details.
+						</p>
 					</footer>
 				</div>
 			</article>
@@ -220,27 +228,27 @@
 				<div class="container">
 					<header class = "reduceBottomMargin">
 						<h2>How was the data explored?</h2>
-						<p>
+						<p class = "x-large">
 							Through Python and its many libraries
 							<table class = "tagForm">
 								<tr>
 									<td><span class = "tagLabel" style = "font-size:xx-large">Tools</span></td>
 									<!-- TAGS HERE -->
-									<td>
-										<span class = "tag">Python</span>
-										<span class = "tag">Jupyter Notebook</span>
-										<span class = "tag">Google Colab</span>
-										<span class = "tag">Google Sheets</span>
-										<span class = "tag">Pandas</span>
-										<span class = "tag">Deep Translator</span>
-										<span class = "tag">Natural Language Toolkit</span>
-										<span class = "tag">Regular Expressions</span>
-										<span class = "tag">Numpy</span>
-										<span class = "tag">Scikit-learn</span>
-										<span class = "tag">Plotly</span>
-										<span class = "tag">SciPy</span>
-										<span class = "tag">Matplotlib</span>
-										<span class = "tag">Seaborn</span>
+									<td class = "tags">
+										<span>Python</span>
+										<span>Jupyter Notebook</span>
+										<span>Google Colab</span>
+										<span>Google Sheets</span>
+										<span>Pandas</span>
+										<span>Deep Translator</span>
+										<span>Natural Language Toolkit</span>
+										<span>Regular Expressions</span>
+										<span>NumPy</span>
+										<span>Scikit-learn</span>
+										<span>Plotly</span>
+										<!-- <span class = "tag">SciPy</span> -->
+										<!-- <span class = "tag">Matplotlib</span> -->
+										<!-- <span class = "tag">Seaborn</span> -->
 									</td>
 								</tr>
 							</table>
@@ -248,50 +256,87 @@
 						</p>
 					</header>
 					<div class="row">
-						<div class="col-4 col-6-medium col-12-small">
+						<div class="card col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-								<h3><a href="#">Cleaning</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
+								<img class = "tile" src="images/cleaning.png" alt="" />
+								<h3>Cleaning</h3>
+								<p class = "x-small-margin-bot justify">
+									The datasets were cleaned by filtering out entries that had insufficient data or contained data which could not be used.
+								</p>
+								<p class = "x-small-margin-bot justify">
+									For this step, the entries containing the following properties were filtered out of the initial datasets:
+									<ul class = "filter-properties justify">
+										<li> non-exact duplicates </li>
+										<li> non-spam (Data Set A) </li>
+										<li> no phone number </li>
+										<li> no alphabetical characters in body </li>
+										<li> hidden or broken content <br> ("Content not supported" or "&ltRedacted&gt") </li>
+									</ul>
+								</p>
 							</article>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
+						<div class="card col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="#">Processing</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
+								<img class = "tile" src="images/preprocessing.png" alt="" />
+								<h3>Preprocessing</h3>
+								<p class = "x-small-margin-bot justify">
+									With both datasets cleaned, they were combined into a single compiled dataset. 
+									From here, several pieces of information were extrapolated from each entry including: 
+									<ul class = "filter-properties justify">
+										<li> year </li>
+										<li> month </li>
+										<li> day of week </li>
+										<li> sender carrier </li>
+										<li> SMS length </li>
+									</ul>
+								</p>
+								<p class = "x-small-margin-bot justify">
+									Lastly, the SMS messages were prepared for topic modeling by applying the following:
+									<ul class = "filter-properties justify">
+										<li> emoticons were removed </li>
+										<li> text was translated to English </li>
+										<li> tokenization </li>
+										<li> lemmatization </li>
+										<li> stopword filtering </li>
+										<li> stemming </li>
+									</ul>
+								</p>
 							</article>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
+						<div class="card col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-								<h3><a href="#">Clustering</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
+								<img class="tile" src="images/modeling.png" alt="" />
+								<h3>Topic Modeling</h3>
+								<p class = "justify">
+									Using the prepared data obtained, 
+									topic modeling was performed on the SMS messages in the dataset to form ten topic clusters.
+								</p>
+								<p class = justify>
+									From this, each entry was assigned to a cluster depending on which topic it was most dominantly similar to, 
+									thus grouping SMS messages with similar or possibly related content.
+								</p>
 							</article>
 						</div>
 					</div>
 					<footer>
+						<p class = "x-large">
+							The Jupyter notebook illustrating the process is available on Google Colab. 
+						</p>
 						<a href="https://colab.research.google.com/drive/1M8YJQMv2aG4FSf4ppGqhyp7ngR2VqLvG?usp=sharing" class="button">
 							Visit the Jupyter Notebook
 						</a>
 					</footer>
 				</div>
 			</article>
-			<!-- Methods -->
+
+			<!-- Methods
 			<article id="methods" class="wrapper style3">
 				<div class="container">
 					<header>
 						<h2>Let's talk about our data science methodology.</h2>
 						<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat.</p>
 					</header>
-					<div class="row">
-						<div class="col-6 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="#">Data Preprocessing</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
+					<div class="row aln-center">
 						<div class="col-6 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
@@ -304,7 +349,7 @@
 						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
 					</footer>
 				</div>
-			</article>
+			</article> -->
 
 			<!-- Results -->
 			<article id="results" class="wrapper style3">
