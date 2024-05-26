@@ -368,6 +368,9 @@ input, select, textarea {
 			margin-left: 41.66667%;
 		}
 
+		.row > .col-5half {
+			width: 48%;
+		}
 		.row > .col-6 {
 			width: 50%;
 		}
@@ -2118,7 +2121,7 @@ input, select, textarea {
 		}
 
 			#top .image img {
-				border-radius: 100%;
+				max-width:100%;
 			}
 
 		#top h1 {
@@ -2213,8 +2216,8 @@ input, select, textarea {
 			}
 
 				#top .image {
-					width: 24em;
 					height: 24em;
+					width: 24em;
 					margin: 0;
 				}
 
@@ -2233,6 +2236,10 @@ input, select, textarea {
 
 				#top .image {
 					margin: 0 auto 2em auto;
+				}
+
+				#top .image img {
+					max-width:80%;
 				}
 
 	}
@@ -2418,6 +2425,10 @@ input, select, textarea {
 
 				#top p {
 					font-size: 1em;
+				}
+
+				#top .image img {
+					max-width:70%;
 				}
 
 			#contact footer {

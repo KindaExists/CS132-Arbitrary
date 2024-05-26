@@ -24,7 +24,7 @@
 					<li><a href="#dataCollection">Collection</a></li>
 					<li><a href="#dataExploration">Exploration</a></li>
 					<!-- <li><a href="#methods">Methods</a></li> -->
-					<!-- <li><a href="#results">Results</a></li> -->
+					<li><a href="#results">Results</a></li>
 					<!-- <li><a href="#team">Team</a></li> -->
 				</ul>
 			</nav>
@@ -33,10 +33,7 @@
 			<article id="top" class="wrapper style1">
 				<div class="container">
 					<div class="row">
-						<!-- <div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/pic00.jpg" alt="" /></span>
-						</div> -->
-						<div class="col-8 col-7-large col-12-medium">
+						<div class="col-8 col-7-large col-11-medium">
 							<header>
 								<h1>
 									Hi. We are <strong>Arbitrary</strong>.
@@ -52,10 +49,13 @@
 								Like the popular canned food brand it is named after, spam texts can come in all kinds of varieties. This data project aims to uncover the commonalities between these messages and analyze the trends and patterns that they follow.
 							</p>
 							<ul id ="members" style = "padding-left: 0;">
-							  <li style = "margin-left: 0em;">Hans Miguel Salazar <span class="classSection"  >WFY <img src="images/maple-leaf.png"></span></li>
-							  <li>Ehren Castillo <span class="classSection">WFY <img src="images/maple-leaf.png"></span></li>
-							  <li>Kevin Trinidad <span class="classSection">WFY <img src="images/maple-leaf.png"></span></li>
+								<li style = "margin-left: 0em;">Hans Miguel Salazar <span class="classSection"  >WFY <img src="images/maple-leaf.png"></span></li>
+								<li>Ehren Castillo <span class="classSection">WFY <img src="images/maple-leaf.png"></span></li>
+								<li>Kevin Trinidad <span class="classSection">WFY <img src="images/maple-leaf.png"></span></li>
 							</ul>
+						</div>
+						<div class="col-4 col-5-large col-12-medium">
+							<span class="image fit"><img src="images/wordcloud.png" alt="" /></span>
 						</div>
 					</div>
 				</div>
@@ -137,11 +137,11 @@
 							<h3 class="question">Is there a difference between Spam messages before and after the deadline of the Sim Card Registration Act?</h3>
 							<br>
 							<h3>Null Hypothesis</h3>
-							<h3 class="question">The content of spam messages in the Philippines are random and do not follow any observable trend or pattern.</h3>
+							<!-- <h3 class="question">The content of spam messages in the Philippines are random and do not follow any observable trend or pattern.</h3> -->
 							<h3 class="question">There are no notable differences in the content of Spam messages before and after the deadline of the Sim Card Registration Act.</h3>
 							<br>
 							<h3>Alternative Hypothesis</h3>
-							<h3 class="question">The content of spam messages in the Philippines do follow observable trends and patterns.</h3>
+							<!-- <h3 class="question">The content of spam messages in the Philippines do follow observable trends and patterns.</h3> -->
 							<h3 class="question">There are noticeable differences in the content of Spam messages sent after the deadline of the Sim Card Registration Act.</h3>
 							<br>
 							<h3>Action Plan</h3>
@@ -353,27 +353,128 @@
 
 			<!-- Results -->
 			<article id="results" class="wrapper style3">
-				<!-- <div class="container">
+				<div class="container">
 					<header>
-						<h2>Here's what we found out.</h2>
-						<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat.</p>
+						<h2>Here are the results.</h2>
+						<p class = "x-large"> 
+							To understand the effects of the the SIM Card Registration Act, 
+							the results of the data were split to before and after the deadline.
+						</p>
 					</header>
-					<div class="row">
-						<div class="col-6 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="#">Results</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
+
+					<div class="row box margin-bot">
+						<div class="col-12 x-small-margin-bot">
+							<h2 class = "x-small-margin-bot">Frequency of words</h2>
+							<hr>
 						</div>
-						<div class="col-6 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-								<h3><a href="#">Results</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
+						<div class="col-12">
+							<p class="large">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+								Tellus integer feugiat scelerisque varius morbi. Suscipit adipiscing bibendum est ultricies. Sodales ut etiam sit amet. 
+								Eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus. 
+								Iaculis urna id volutpat lacus laoreet. Scelerisque viverra mauris in aliquam. 
+								Mi quis hendrerit dolor magna eget est lorem. Elit ut aliquam purus sit amet luctus. 
+								Semper viverra nam libero justo laoreet sit amet cursus sit. 
+								Neque laoreet suspendisse interdum consectetur libero id faucibus nisl.
+								Blandit aliquam etiam erat velit. Pulvinar pellentesque habitant morbi tristique senectus et netus et. 
+								In arcu cursus euismod quis.
+							</p>
 						</div>
-					</div> -->
+						<div class="col-12 col-12-medium col-12-small">
+							<h3>Before</h3>
+							<!-- <hr> -->
+							<div class = "image fit"><img src="images/wordfreq-bar-pre.png"></div>
+						</div>
+						<div class="col-12 col-12-medium col-12-small">
+							<h3>After</h3>
+							<!-- <hr> -->
+							<div class = "image fit"><img src="images/wordfreq-bar-post.png"></div>
+						</div>
+					</div>
+
+					<div class="row box margin-bot">
+						<div class="col-12 x-small-margin-bot">
+							<h2 class = "x-small-margin-bot">Frequency of spam SMS received by day of the week</h2>
+							<hr>
+						</div>
+						<div class="col-12">
+							<p class="large">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+								Tellus integer feugiat scelerisque varius morbi. Suscipit adipiscing bibendum est ultricies. Sodales ut etiam sit amet. 
+								Eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus. 
+								Iaculis urna id volutpat lacus laoreet. Scelerisque viverra mauris in aliquam. 
+								Mi quis hendrerit dolor magna eget est lorem. Elit ut aliquam purus sit amet luctus. 
+								Semper viverra nam libero justo laoreet sit amet cursus sit. 
+								Neque laoreet suspendisse interdum consectetur libero id faucibus nisl.
+								Blandit aliquam etiam erat velit. Pulvinar pellentesque habitant morbi tristique senectus et netus et. 
+								In arcu cursus euismod quis.
+							</p>
+						</div>
+						<div class="col-6 col-12-medium col-12-small">
+							<h3>Before</h3>
+							<!-- <hr> -->
+							<div class = "image fit"><img src="images/dayWeeks-bar-pre.png"></div>
+						</div>
+						<div class="col-6 col-12-medium col-12-small">
+							<h3>After</h3>
+							<!-- <hr> -->
+							<div class = "image fit"><img src="images/dayWeeks-bar-post.png"></div>
+						</div>
+					</div>
+
+					<div class="row box margin-bot">
+						<div class="col-12 x-small-margin-bot">
+							<h2 class = "x-small-margin-bot">Top-level domains of the sites in spam SMS</h2>
+							<hr>
+						</div>
+						<div class="col-12">
+							<p class="large">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+								Tellus integer feugiat scelerisque varius morbi. Suscipit adipiscing bibendum est ultricies. Sodales ut etiam sit amet. 
+								Eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus. 
+								Iaculis urna id volutpat lacus laoreet. Scelerisque viverra mauris in aliquam. 
+								Mi quis hendrerit dolor magna eget est lorem. Elit ut aliquam purus sit amet luctus. 
+								Semper viverra nam libero justo laoreet sit amet cursus sit. 
+								Neque laoreet suspendisse interdum consectetur libero id faucibus nisl.
+								Blandit aliquam etiam erat velit. Pulvinar pellentesque habitant morbi tristique senectus et netus et. 
+								In arcu cursus euismod quis.
+							</p>
+						</div>
+						<div class="col-12 col-12-medium col-12-small">
+							<h3>Before</h3>
+							<!-- <hr> -->
+							<div class = "image fit"><img src="images/tld-bar-pre.png"></div>
+						</div>
+						<div class="col-12 col-12-medium col-12-small">
+							<h3>After</h3>
+							<!-- <hr> -->
+							<div class = "image fit"><img src="images/tld-bar-post.png"></div>
+						</div>
+					</div>
+
+					<div class="row box margin-bot">
+						<div class="col-12 x-small-margin-bot">
+							<h2 class = "x-small-margin-bot">Length of spam messages</h2>
+							<hr>
+						</div>
+						<div class="col-12">
+							<p class="large x-small-margin-bot">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+								Tellus integer feugiat scelerisque varius morbi. Suscipit adipiscing bibendum est ultricies. Sodales ut etiam sit amet. 
+								Eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus. 
+								Iaculis urna id volutpat lacus laoreet. Scelerisque viverra mauris in aliquam. 
+								Mi quis hendrerit dolor magna eget est lorem. Elit ut aliquam purus sit amet luctus. 
+								Semper viverra nam libero justo laoreet sit amet cursus sit. 
+								Neque laoreet suspendisse interdum consectetur libero id faucibus nisl.
+								Blandit aliquam etiam erat velit. Pulvinar pellentesque habitant morbi tristique senectus et netus et. 
+								In arcu cursus euismod quis.
+							</p>
+						</div>
+						<div class="col-12">
+							<div class = "image fit"><img class="gray-border" src="images/charlength-histogram.png"></div>
+						</div>
+					</div>
+
 					<footer>
 						<p>Want to learn more? Take a look at our source codes.</p>
 						<a href="https://github.com/ktrin-u/CS132-Arbitrary" class="button large scrolly">Github Repo</a>

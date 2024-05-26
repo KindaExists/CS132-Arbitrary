@@ -107,6 +107,15 @@
     margin-bottom: 0.5lh;
 }
 
+.reduceTopMargin {
+    margin-top: 0.5lh;
+}
+
+hr {
+    margin-top: 0.5lh;
+    margin-bottom: 0.5lh;
+}
+
 .justify {
     text-align:justify;
 }
@@ -130,4 +139,12 @@
 
 .filter-properties{
     text-align:left
+}
+
+.gray-border {
+    border: 1px solid #727272;
+}
+
+.margin-bot {
+    margin-bottom: 2lh;
 }
