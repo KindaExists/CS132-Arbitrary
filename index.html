@@ -22,8 +22,7 @@
 					<li><a href="#overview">Overview</a></li>
 					<li><a href="#background">Background</a></li>
 					<li><a href="#dataCollection">Collection</a></li>
-					<li><a href="#dataExploration">Exploration</a></li>
-					<!-- <li><a href="#methods">Methods</a></li> -->
+					<li><a href="#methods">Methodology</a></li>
 					<li><a href="#results">Results</a></li>
 					<!-- <li><a href="#team">Team</a></li> -->
 				</ul>
@@ -33,7 +32,7 @@
 			<article id="top" class="wrapper style1">
 				<div class="container">
 					<div class="row">
-						<div class="col-8 col-7-large col-11-medium">
+						<div class="col-8 col-7-col-11-medium">
 							<header>
 								<h1>
 									Hi. We are <strong>Arbitrary</strong>.
@@ -54,7 +53,7 @@
 								<li>Kevin Trinidad <span class="classSection">WFY <img src="images/maple-leaf.png"></span></li>
 							</ul>
 						</div>
-						<div class="col-4 col-5-large col-12-medium">
+						<div class="col-4 col-5-col-12-medium">
 							<span class="image fit"><img src="images/wordcloud.png" alt="" /></span>
 						</div>
 					</div>
@@ -128,24 +127,54 @@
 							<a href="https://www.philstar.com/headlines/2023/09/02/2293211/text-scams-have-shifted-online-apps-globe-warns">[3]</a>
 						</p>
 					</header>
-						<div>
-							<h2>What do we aim to do?</h2>
-							<h3>Main Question</h3>
-							<h3 class="question">What could be the trends and patterns of spam messages in the Philippines?</h3>
+						<div id="aims row">
+							<div class="col-12 x-small-margin-bot">
+								<h2>What do we aim to do?</h2>
+							</div>
+							<div class="col-12 row">
+								<div class="col-2 col-12-medium col-12-small question-center" >
+									<h3 class="x-small-margin-bot">Main Question</h3>
+								</div>
+								<div class="col-10 col-12-medium col-12-small">
+									<h3 class="key-point question">What could be the trends and patterns of spam messages in the Philippines?</h3>
+								</div>
+							</div>
 							<br>
-							<h3>Secondary Question</h3>
-							<h3 class="question">Is there a difference between Spam messages before and after the deadline of the Sim Card Registration Act?</h3>
+							<div class="col-12 row">
+								<div class="col-2 col-12-medium col-12-small question-center">
+									<h3>Secondary Question</h3>
+								</div>
+								<div class="col-10 col-12-medium col-12-small">
+									<h3 class="key-point question">Is there a difference between Spam messages before and after the deadline of the Sim Card Registration Act?</h3>
+								</div>
+							</div>
 							<br>
-							<h3>Null Hypothesis</h3>
-							<!-- <h3 class="question">The content of spam messages in the Philippines are random and do not follow any observable trend or pattern.</h3> -->
-							<h3 class="question">There are no notable differences in the content of Spam messages before and after the deadline of the Sim Card Registration Act.</h3>
+							<div class="col-12 row">
+								<div class="col-2 col-12-medium col-12-small question-center">
+									<h3>Null hypothesis</h3>
+								</div>
+								<div class="col-10 col-12-medium col-12-small">
+									<h3 class="key-point question">The SIM card registration act has <b style="font-weight: bold;">no</b> effect on the content of spam messages.</h3>
+								</div>
+							</div>
 							<br>
-							<h3>Alternative Hypothesis</h3>
-							<!-- <h3 class="question">The content of spam messages in the Philippines do follow observable trends and patterns.</h3> -->
-							<h3 class="question">There are noticeable differences in the content of Spam messages sent after the deadline of the Sim Card Registration Act.</h3>
+							<div class="col-12 row">
+								<div class="col-2 col-12-medium col-12-small question-center">
+									<h3>Alternative hypothesis</h3>
+								</div>
+								<div class="col-10 col-12-medium col-12-small">
+									<h3 class="key-point question">The SIM card registration act has an effect on the content of spam messages.</h3>
+								</div>
+							</div>
 							<br>
-							<h3>Action Plan</h3>
-							<h3 class="question">Utilize data science tools and Natural Language Processing (NLP) to identify the patterns and trends of Spam text content.</h3>
+							<div class="col-12 row">
+								<div class="col-2 col-12-medium col-12-small question-center">
+									<h3>Action Plan</h3>
+								</div>
+								<div class="col-10 col-12-medium col-12-small">
+									<h3 class="key-point question">Utilize data science tools and Natural Language Processing (NLP) to identify the patterns and trends of Spam text content.</h3>
+								</div>
+							</div>
 						</div>
 					</div>
 					<!-- <footer>
@@ -218,16 +247,16 @@
 							Visit the project's data set
 						</a>
 						<p style = "margin-top:2em" class = "x-large">
-							After processing, 1062 entries remained. Check out the <a href="#dataExploration">exploration</a> section for more details.
+							After processing, 1062 entries remained. Check out the <a href="#methods">methodology</a> section for more details.
 						</p>
 					</footer>
 				</div>
 			</article>
 
-			<article id="dataExploration" class="wrapper style3">
+			<article id="methods" class="wrapper style3">
 				<div class="container">
 					<header class = "reduceBottomMargin">
-						<h2>How was the data explored?</h2>
+						<h2>How was the data handled?</h2>
 						<p class = "x-large">
 							Through Python and its many libraries
 							<table class = "tagForm">
@@ -256,7 +285,7 @@
 						</p>
 					</header>
 					<div class="row">
-						<div class="card col-4 col-6-medium col-12-small">
+						<div class="card col-6 col-6-medium col-12-small">
 							<article class="box style2">
 								<img class = "tile" src="images/cleaning.png" alt="" />
 								<h3>Cleaning</h3>
@@ -275,7 +304,7 @@
 								</p>
 							</article>
 						</div>
-						<div class="card col-4 col-6-medium col-12-small">
+						<div class="card col-6 col-6-medium col-12-small">
 							<article class="box style2">
 								<img class = "tile" src="images/preprocessing.png" alt="" />
 								<h3>Preprocessing</h3>
@@ -303,13 +332,29 @@
 								</p>
 							</article>
 						</div>
-						<div class="card col-4 col-6-medium col-12-small">
+						<div class="card col-6 col-6-medium col-12-small">
 							<article class="box style2">
 								<img class="tile" src="images/modeling.png" alt="" />
 								<h3>Topic Modeling</h3>
 								<p class = "justify">
 									Using the prepared data obtained, 
 									topic modeling was performed on the SMS messages in the dataset to form ten topic clusters.
+								</p>
+								<p class = justify>
+									From this, each entry was assigned to a cluster depending on which topic it was most dominantly similar to, 
+									thus grouping SMS messages with similar or possibly related content.
+								</p>
+							</article>
+						</div>
+						<div class="card col-6 col-6-medium col-12-small">
+							<article class="box style2">
+								<img class="tile" src="images/data-split.png" alt="" />
+								<h3>Dataset Splitting</h3>
+								<p class = "justify">
+									The deadline for SIM Card Registration was July 25, 2023.
+									The processed data set was split into two dataframe whether the message was received
+									before or after this data. 
+									From each of these two dataframes, 200 random samples were taken to equalize them for statistical testing. 
 								</p>
 								<p class = justify>
 									From this, each entry was assigned to a cluster depending on which topic it was most dominantly similar to, 
@@ -351,14 +396,14 @@
 				</div>
 			</article> -->
 
-			<!-- Results -->
+			<!--! Results -->
 			<article id="results" class="wrapper style3">
 				<div class="container">
 					<header>
-						<h2>Here are the results.</h2>
+						<h2>Here are the results of data exploration.</h2>
 						<p class = "x-large"> 
-							To understand the effects of the the SIM Card Registration Act, 
-							the results of the data were split to before and after the deadline.
+							With the data prepared, visualizations were generated. The hypothesis was tested with a 95% confidence level to determine
+							if the SIM Card Registration has an effect on certain parameters of spam messages. 
 						</p>
 					</header>
 
@@ -368,27 +413,32 @@
 							<hr>
 						</div>
 						<div class="col-12">
-							<p class="large">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-								Tellus integer feugiat scelerisque varius morbi. Suscipit adipiscing bibendum est ultricies. Sodales ut etiam sit amet. 
-								Eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus. 
-								Iaculis urna id volutpat lacus laoreet. Scelerisque viverra mauris in aliquam. 
-								Mi quis hendrerit dolor magna eget est lorem. Elit ut aliquam purus sit amet luctus. 
-								Semper viverra nam libero justo laoreet sit amet cursus sit. 
-								Neque laoreet suspendisse interdum consectetur libero id faucibus nisl.
-								Blandit aliquam etiam erat velit. Pulvinar pellentesque habitant morbi tristique senectus et netus et. 
-								In arcu cursus euismod quis.
+							<p class ="x-small-margin-bot bold black">
+								There is no effect on the top 10 most frequent words used in spam messages.
+							</p>
+							<p class="justify">
+								For the hypothesis testing, chi-square test for independence was used on the top 10 most frequent words found
+								in the spam messages and that resulted to p-value = 5e-23. 
+								The primary goal of spam messages is to mislead people and incite thoughtless behaviors.
+								This can be accomplished through various methods but one of the most common tactics of spam messages
+								is to take advantage of scarcity and desires <a href="https://nogofallmaga.org/the-psychology-of-scamming-understanding-persuasion-techniques/" style="text-decoration:none;"><sup>[4]</sup></a>.
+								Certain words are more effective for this than others and may be an indicator of spam.
 							</p>
 						</div>
 						<div class="col-12 col-12-medium col-12-small">
 							<h3>Before</h3>
-							<!-- <hr> -->
-							<div class = "image fit"><img src="images/wordfreq-bar-pre.png"></div>
+							<p class ="justify">
+								Brief explanation
+							</p>
+							<div class = "image fit"><img class="gray-border" src="images/wordfreq-bar-pre.png"></div>
+							<hr class="graph-sep">
 						</div>
 						<div class="col-12 col-12-medium col-12-small">
 							<h3>After</h3>
-							<!-- <hr> -->
-							<div class = "image fit"><img src="images/wordfreq-bar-post.png"></div>
+							<p class ="justify">
+								Brief explanation
+							</p>
+							<div class = "image fit"><img class="gray-border" src="images/wordfreq-bar-post.png"></div>
 						</div>
 					</div>
 
@@ -398,57 +448,73 @@
 							<hr>
 						</div>
 						<div class="col-12">
-							<p class="large">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-								Tellus integer feugiat scelerisque varius morbi. Suscipit adipiscing bibendum est ultricies. Sodales ut etiam sit amet. 
-								Eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus. 
-								Iaculis urna id volutpat lacus laoreet. Scelerisque viverra mauris in aliquam. 
-								Mi quis hendrerit dolor magna eget est lorem. Elit ut aliquam purus sit amet luctus. 
-								Semper viverra nam libero justo laoreet sit amet cursus sit. 
-								Neque laoreet suspendisse interdum consectetur libero id faucibus nisl.
-								Blandit aliquam etiam erat velit. Pulvinar pellentesque habitant morbi tristique senectus et netus et. 
-								In arcu cursus euismod quis.
+							<p class="x-small-margin-bot bold black">
+								There is no effect on which day of the week spam messages were received.
+							</p>
+							<p class="justify">
+								For the hypthesis testing, chi-square test for independence resulted to p-value = 0.499.
+								This lack of effect could be attributed to the prominence of automated bots and scripts. 
+								While regular people only work during the weekdays, bots are different.
+								The day of the week could be said to be irrelevant to the sources of these spam messages. 
 							</p>
 						</div>
 						<div class="col-6 col-12-medium col-12-small">
 							<h3>Before</h3>
-							<!-- <hr> -->
-							<div class = "image fit"><img src="images/dayWeeks-bar-pre.png"></div>
+							<p class ="justify">
+								Brief explanation
+							</p>
+							<div class = "image fit"><img class="gray-border" src="images/dayWeeks-bar-pre.png"></div>
 						</div>
 						<div class="col-6 col-12-medium col-12-small">
 							<h3>After</h3>
-							<!-- <hr> -->
-							<div class = "image fit"><img src="images/dayWeeks-bar-post.png"></div>
+							<p class ="justify">
+								Brief explanation
+							</p>
+							<div class = "image fit"><img class="gray-border" src="images/dayWeeks-bar-post.png"></div>
 						</div>
 					</div>
 
 					<div class="row box margin-bot">
 						<div class="col-12 x-small-margin-bot">
-							<h2 class = "x-small-margin-bot">Top-level domains of the sites in spam SMS</h2>
+							<h2 class = "x-small-margin-bot">Links in spam SMS</h2>
 							<hr>
 						</div>
 						<div class="col-12">
-							<p class="large">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-								Tellus integer feugiat scelerisque varius morbi. Suscipit adipiscing bibendum est ultricies. Sodales ut etiam sit amet. 
-								Eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus. 
-								Iaculis urna id volutpat lacus laoreet. Scelerisque viverra mauris in aliquam. 
-								Mi quis hendrerit dolor magna eget est lorem. Elit ut aliquam purus sit amet luctus. 
-								Semper viverra nam libero justo laoreet sit amet cursus sit. 
-								Neque laoreet suspendisse interdum consectetur libero id faucibus nisl.
-								Blandit aliquam etiam erat velit. Pulvinar pellentesque habitant morbi tristique senectus et netus et. 
-								In arcu cursus euismod quis.
+							<p class="x-small-margin-bot bold black">
+								There is an effect on the presence of links in spam messages.
+							</p>
+							<p class ="justify">
+								For the presence of links hypothesis testing, chi-square test for independence was used and it yielded p-value = 0.023.
+								Due to the ever increasing accessibility of the internet, website links are now often seen in spam messages.
+								If the words were meant to incite various psychological aspects, then the link is presented as the "gateway"
+								to resolve those. However, the presence of a link in a message, though a good indicator, is not a conclusive metric.
+								
+							</p>
+							<p class="x-small-margin-bot bold black">
+								There is no effect on the top 10 most common top-level domains in spam messages with links.
+							</p>
+							<p class = "justify">
+								For the TLDs hypothesis testing, chi-square test for independence was also used and it yielded p-value = 6e-85.
+								Another important component of website links is the top-level domain (TLD) such as .com, .edu, and etc. 
+								TLDs are moderated by the Internet Corporation for Assigned Names and Numbers (ICANN) and the restrictions
+								for each type can vary, however, lesser known TLDs have less stringent restrictions when compared to TLDs like ".com.ph" <sup><a href="https://www.cloudflare.com/learning/dns/top-level-domain/">[5]</a></sup>.
+								As a result, websites within these lesser known TLDs can be malicious in nature, therefore, links' TLDS are also a good indicator.
 							</p>
 						</div>
 						<div class="col-12 col-12-medium col-12-small">
 							<h3>Before</h3>
-							<!-- <hr> -->
-							<div class = "image fit"><img src="images/tld-bar-pre.png"></div>
+							<p class ="justify">
+								Brief explanation
+							</p>
+							<div class = "image fit"><img class="gray-border" src="images/tld-bar-pre.png"></div>
+							<hr class="graph-sep">
 						</div>
 						<div class="col-12 col-12-medium col-12-small">
 							<h3>After</h3>
-							<!-- <hr> -->
-							<div class = "image fit"><img src="images/tld-bar-post.png"></div>
+							<p class ="justify">
+								Brief explanation
+							</p>
+							<div class = "image fit"><img class="gray-border" src="images/tld-bar-post.png"></div>
 						</div>
 					</div>
 
@@ -458,26 +524,35 @@
 							<hr>
 						</div>
 						<div class="col-12">
-							<p class="large x-small-margin-bot">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-								Tellus integer feugiat scelerisque varius morbi. Suscipit adipiscing bibendum est ultricies. Sodales ut etiam sit amet. 
-								Eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus. 
-								Iaculis urna id volutpat lacus laoreet. Scelerisque viverra mauris in aliquam. 
-								Mi quis hendrerit dolor magna eget est lorem. Elit ut aliquam purus sit amet luctus. 
-								Semper viverra nam libero justo laoreet sit amet cursus sit. 
-								Neque laoreet suspendisse interdum consectetur libero id faucibus nisl.
-								Blandit aliquam etiam erat velit. Pulvinar pellentesque habitant morbi tristique senectus et netus et. 
-								In arcu cursus euismod quis.
+							<p class="x-small-margin-bot bold black">
+								There is no effect on the length of spam messages.
+							</p>
+							<p class="x-small-margin-bot justify">
+								For the hypothesis test, Mann-Whitney U test was used and it yielded p-value = 0.639. 
+								Normality testing showed that the pre and post-deadline samples were not normally distributed, hence, a t-test would be unreliable. 
+								
 							</p>
 						</div>
-						<div class="col-12">
-							<div class = "image fit"><img class="gray-border" src="images/charlength-histogram.png"></div>
+						<div class="col-12 col-12-medium col-12-small">
+							<h3>Before</h3>
+							<p class ="justify">
+								Brief explanation
+							</p>
+							<div class = "image fit"><img class="gray-border" src="images/charlength-bar-pre.png"></div>
+							<hr class="graph-sep">
+						</div>
+						<div class="col-12 col-12-medium col-12-small">
+							<h3>After</h3>
+							<p class ="justify">
+								Brief explanation
+							</p>
+							<div class = "image fit"><img class="gray-border" src="images/charlength-bar-post.png"></div>
 						</div>
 					</div>
 
 					<footer>
 						<p>Want to learn more? Take a look at our source codes.</p>
-						<a href="https://github.com/ktrin-u/CS132-Arbitrary" class="button large scrolly">Github Repo</a>
+						<a href="https://github.com/ktrin-u/CS132-Arbitrary" class="button scrolly">Github Repo</a>
 					</footer>
 				</div>
 			</article>
