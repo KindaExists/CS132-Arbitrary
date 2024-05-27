@@ -185,3 +185,14 @@ hr {
 .light-bold {
     font-weight: 600;
 }
+
+.team-box {
+    background-color: #2D2D2D;
+    padding: 1em;
+    box-shadow: 0.5em 0.5em #2A2A2A;
+    border-right: solid 1px #444;
+}
+
+.team-image {
+    margin-bottom:0.5lh;
+}
