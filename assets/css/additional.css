@@ -181,3 +181,7 @@ hr {
     align-self:center;
     border-top: dotted 4px;
 }
+
+.light-bold {
+    font-weight: 600;
+}

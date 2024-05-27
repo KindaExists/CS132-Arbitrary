@@ -154,7 +154,7 @@
 									<h3>Null hypothesis</h3>
 								</div>
 								<div class="col-10 col-12-medium col-12-small">
-									<h3 class="key-point question">The SIM card registration act has <b style="font-weight: bold;">no</b> effect on the content of spam messages.</h3>
+									<h3 class="key-point question">The SIM card registration act has <b style="font-weight:600;">no</b> effect on the content of spam messages.</h3>
 								</div>
 							</div>
 							<br>
@@ -191,7 +191,7 @@
 					<header class = "reduceBottomMargin">
 						<h2>How was the data collected?</h2>
 						<p class = "x-large">
-							The dataset used is a compiled set of two public datasets available on <a href="https://kaggle.com">Kaggle</a>. 
+							The dataset used is a compilation of two public datasets available on <a href="https://kaggle.com">Kaggle</a>. 
 							Both of these datasets contain Philippine spam messages personally received and compiled by these Kaggle users. 
 							Additionally, both datasets contain timestamps for when messages were received.
 							<table class = "tagForm">
@@ -365,7 +365,7 @@
 					</div>
 					<footer>
 						<p class = "x-large">
-							The Jupyter notebook illustrating the process is available on Google Colab. 
+							The Jupyter notebook illustrating this process is available on Google Colab. 
 						</p>
 						<a href="https://colab.research.google.com/drive/1M8YJQMv2aG4FSf4ppGqhyp7ngR2VqLvG?usp=sharing" class="button">
 							Visit the Jupyter Notebook
@@ -374,36 +374,14 @@
 				</div>
 			</article>
 
-			<!-- Methods
-			<article id="methods" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h2>Let's talk about our data science methodology.</h2>
-						<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat.</p>
-					</header>
-					<div class="row aln-center">
-						<div class="col-6 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-								<h3><a href="#">Machine Learning</a></h3>
-								<p>Ornare nulla proin odio consequat.</p>
-							</article>
-						</div>
-					</div>
-					<footer>
-						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-					</footer>
-				</div>
-			</article> -->
-
 			<!--! Results -->
 			<article id="results" class="wrapper style3">
 				<div class="container">
 					<header>
 						<h2>Here are the results of data exploration.</h2>
 						<p class = "x-large"> 
-							With the data prepared, visualizations were generated. The hypothesis was tested with a 95% confidence level to determine
-							if the SIM Card Registration has an effect on certain parameters of spam messages. 
+							With the data prepared, visualizations were generated. The confidence level for hypthesis testing was set to 95%.
+							This will determine if the SIM Card Registration deadline on July 25, 2023 has an effect on certain parameters of spam messages. 
 						</p>
 					</header>
 
@@ -414,11 +392,11 @@
 						</div>
 						<div class="col-12">
 							<p class ="x-small-margin-bot bold black">
-								There is no effect on the top 10 most frequent words used in spam messages.
+								There is no association between the period before and after the SIM card registration act and the frequency of the top 10 most common words in spam messages.
 							</p>
 							<p class="justify">
-								For the hypothesis testing, chi-square test for independence was used on the top 10 most frequent words found
-								in the spam messages and that resulted to p-value = 5e-23. 
+								For the hypothesis testing, <b class="light-bold">chi-square test for independence</b> was used on the top 10 most frequent words found
+								in the spam messages and that resulted to <b class="light-bold">p-value = 5e-23</b>. 
 								The primary goal of spam messages is to mislead people and incite thoughtless behaviors.
 								This can be accomplished through various methods but one of the most common tactics of spam messages
 								is to take advantage of scarcity and desires <a href="https://nogofallmaga.org/the-psychology-of-scamming-understanding-persuasion-techniques/" style="text-decoration:none;"><sup>[4]</sup></a>.
@@ -427,16 +405,13 @@
 						</div>
 						<div class="col-12 col-12-medium col-12-small">
 							<h3>Before</h3>
-							<p class ="justify">
-								Brief explanation
-							</p>
 							<div class = "image fit"><img class="gray-border" src="images/wordfreq-bar-pre.png"></div>
 							<hr class="graph-sep">
 						</div>
 						<div class="col-12 col-12-medium col-12-small">
 							<h3>After</h3>
-							<p class ="justify">
-								Brief explanation
+							<p class ="justify x-small-margin-bot">
+								After the deadline, the words that stayed in the top 10 are: <b class=""light-bold>bonus, free, deposit, register, daily, play </b>.
 							</p>
 							<div class = "image fit"><img class="gray-border" src="images/wordfreq-bar-post.png"></div>
 						</div>
@@ -449,10 +424,10 @@
 						</div>
 						<div class="col-12">
 							<p class="x-small-margin-bot bold black">
-								There is no effect on which day of the week spam messages were received.
+								There is no association between the period before and after the SIM card registration act and the frequency of spam messages received by day of the week.
 							</p>
 							<p class="justify">
-								For the hypthesis testing, chi-square test for independence resulted to p-value = 0.499.
+								For the hypthesis testing, <b class="light-bold">chi-square test for independence</b> resulted to <b class="light-bold">p-value = 0.499</b>.
 								This lack of effect could be attributed to the prominence of automated bots and scripts. 
 								While regular people only work during the weekdays, bots are different.
 								The day of the week could be said to be irrelevant to the sources of these spam messages. 
@@ -460,16 +435,10 @@
 						</div>
 						<div class="col-6 col-12-medium col-12-small">
 							<h3>Before</h3>
-							<p class ="justify">
-								Brief explanation
-							</p>
 							<div class = "image fit"><img class="gray-border" src="images/dayWeeks-bar-pre.png"></div>
 						</div>
 						<div class="col-6 col-12-medium col-12-small">
 							<h3>After</h3>
-							<p class ="justify">
-								Brief explanation
-							</p>
 							<div class = "image fit"><img class="gray-border" src="images/dayWeeks-bar-post.png"></div>
 						</div>
 					</div>
@@ -481,20 +450,20 @@
 						</div>
 						<div class="col-12">
 							<p class="x-small-margin-bot bold black">
-								There is an effect on the presence of links in spam messages.
+								There is an association between the period before and after the SIM card registration act and the presence of links in spam messages.
 							</p>
 							<p class ="justify">
-								For the presence of links hypothesis testing, chi-square test for independence was used and it yielded p-value = 0.023.
+								For the presence of links hypothesis testing, <b class="light-bold">chi-square test for independence</b> was used and it yielded <b class="light-bold">p-value = 0.023</b>.
 								Due to the ever increasing accessibility of the internet, website links are now often seen in spam messages.
 								If the words were meant to incite various psychological aspects, then the link is presented as the "gateway"
 								to resolve those. However, the presence of a link in a message, though a good indicator, is not a conclusive metric.
 								
 							</p>
 							<p class="x-small-margin-bot bold black">
-								There is no effect on the top 10 most common top-level domains in spam messages with links.
+								There is no association between the period before and after the SIM card registration act and the top 10 most common top-level domains in spam messages.
 							</p>
 							<p class = "justify">
-								For the TLDs hypothesis testing, chi-square test for independence was also used and it yielded p-value = 6e-85.
+								For the TLDs hypothesis testing, <b class="light-bold">chi-square test for independence</b> was also used and it yielded <b class="light-bold">p-value = 6e-85</b>.
 								Another important component of website links is the top-level domain (TLD) such as .com, .edu, and etc. 
 								TLDs are moderated by the Internet Corporation for Assigned Names and Numbers (ICANN) and the restrictions
 								for each type can vary, however, lesser known TLDs have less stringent restrictions when compared to TLDs like ".com.ph" <sup><a href="https://www.cloudflare.com/learning/dns/top-level-domain/">[5]</a></sup>.
@@ -503,16 +472,14 @@
 						</div>
 						<div class="col-12 col-12-medium col-12-small">
 							<h3>Before</h3>
-							<p class ="justify">
-								Brief explanation
-							</p>
 							<div class = "image fit"><img class="gray-border" src="images/tld-bar-pre.png"></div>
 							<hr class="graph-sep">
 						</div>
 						<div class="col-12 col-12-medium col-12-small">
 							<h3>After</h3>
-							<p class ="justify">
-								Brief explanation
+							<p class ="justify x-small-margin-bot">
+								Notice how the number of sites with TLDs of ".com" dropped sharply.
+								This may be attributed to the risk by association site of ".com" site owners gained after the deadline.
 							</p>
 							<div class = "image fit"><img class="gray-border" src="images/tld-bar-post.png"></div>
 						</div>
@@ -525,34 +492,33 @@
 						</div>
 						<div class="col-12">
 							<p class="x-small-margin-bot bold black">
-								There is no effect on the length of spam messages.
+								There is no association between the period before and after the SIM card registration act and the character length of spam messages.
 							</p>
 							<p class="x-small-margin-bot justify">
-								For the hypothesis test, Mann-Whitney U test was used and it yielded p-value = 0.639. 
+								For the hypothesis test, <b class="light-bold">Mann-Whitney U test</b> was used and it yielded <b class="light-bold">p-value = 0.639</b>. 
 								Normality testing showed that the pre and post-deadline samples were not normally distributed, hence, a t-test would be unreliable. 
+								The distribution can be attributed the 160 characters per peso that prepaid carriers charge users for sending SMS messages.
+								The test result may be an indicator that spammers made little to no changes in terms of content.
 								
 							</p>
 						</div>
 						<div class="col-12 col-12-medium col-12-small">
 							<h3>Before</h3>
-							<p class ="justify">
-								Brief explanation
-							</p>
 							<div class = "image fit"><img class="gray-border" src="images/charlength-bar-pre.png"></div>
 							<hr class="graph-sep">
 						</div>
 						<div class="col-12 col-12-medium col-12-small">
 							<h3>After</h3>
-							<p class ="justify">
-								Brief explanation
-							</p>
 							<div class = "image fit"><img class="gray-border" src="images/charlength-bar-post.png"></div>
 						</div>
 					</div>
 
 					<footer>
-						<p>Want to learn more? Take a look at our source codes.</p>
-						<a href="https://github.com/ktrin-u/CS132-Arbitrary" class="button scrolly">Github Repo</a>
+						<p>Want to learn more and inspect the process? Visit the Jupyter notebook.</p>
+						<!-- <a href="https://github.com/ktrin-u/CS132-Arbitrary" class="button scrolly">Github Repo</a> -->
+						<a href="https://colab.research.google.com/drive/1M8YJQMv2aG4FSf4ppGqhyp7ngR2VqLvG?usp=sharing" class="button">
+							Visit the Jupyter Notebook
+						</a>
 					</footer>
 				</div>
 			</article>
