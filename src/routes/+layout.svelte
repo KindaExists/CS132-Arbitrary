@@ -3,7 +3,7 @@
     import '../app.css';
 </script>
 
-<nav class="navbar min-h-12 lg:min-h-16 bg-primary justify-center gap-2 sticky top-0">
+<nav class="navbar z-50 min-h-12 lg:min-h-16 bg-primary justify-center gap-2 sticky top-0">
     <NavButton href="#top">Top</NavButton>
     <NavButton href="#overview">Overview</NavButton>
     <NavButton href="#background">Background</NavButton>
