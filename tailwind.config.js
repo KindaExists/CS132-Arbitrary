@@ -33,13 +33,18 @@ export default {
           700: '#FFF692',
           800: '#FFFCCE'
         },
+        red: '#fb7185',
         white: '#FFFFFF',
-        gray: '#404040'
+        gray: '#404040',
+        lightgray: {
+          50: '#FAFAFA',
+          100: '#F4F4F4',
+        }
       },
       fontFamily: {
         clearsans: ['ClearSans'],
         souvenirstd: ['SouvenirStd']
-      }
+      },
 		}
 	},
 	plugins: [typography, daisyui],

@@ -2,14 +2,14 @@
 	import BackgroundCard from '$lib/components/BackgroundCard.svelte';
 </script>
 
-<article id="background" class="flex flex-col gap-12 px-8 lg:px-28 xl:px-56 py-32 shadow-md">
+<article id="background" class="bg-lightgray-50 bg-paper bg-repeat  flex flex-col gap-12 px-8 lg:px-28 xl:px-56 py-32 shadow-[inset_0px_2px_3px_0px_#0000001a]">
 	<section class="flex flex-col items-center gap-4">
-		<h2 class="text-3xl lg:text-4xl font-bold">Background</h2>
-		<h3 class="text-2xl text-center font-bold">
+		<h2 class="font-souvenirstd text-blue text-3xl lg:text-4xl font-bold">Background</h2>
+		<h3 class="font-souvenirstd text-blue text-2xl text-center font-bold">
 			Despite the country's best efforts, Spam texts remain a prevalent and persistent form of
 			cybercriminal activity, with millions of messages being detected as of 2024.
 		</h3>
-		<div class="prose max-w-full">
+		<div class="text-blue max-w-full">
 			<p class="text-xl lg:text-2xl text-center m-0">
 				Telecommunication companies such as Globe, PLDT and Smart have taken action against 5.5
 				million spam messages in the past year. However, even with this preventive action, the
@@ -39,7 +39,7 @@
 		</div>
 	</section>
 	<section class="flex flex-col items-center gap-4">
-		<h3 class="text-2xl lg:text-3xl font-bold">What do we aim to do?</h3>
+		<h3 class="font-souvenirstd text-blue text-2xl lg:text-3xl font-bold">What do we aim to do?</h3>
 		<BackgroundCard header="Main Question"
 			>What could be the trends and patterns of spam messages in the Philippines?</BackgroundCard
 		>

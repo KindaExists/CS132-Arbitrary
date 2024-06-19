@@ -11,10 +11,10 @@
 	import lengthPost from '$lib/images/charlength-bar-post.png';
 </script>
 
-<article id="results" class="flex flex-col items-center gap-8 px-8 lg:px-28 xl:px-56 py-32">
+<article id="results" class="bg-lightgray-50 bg-paper bg-repeat  flex flex-col items-center gap-8 px-8 lg:px-28 xl:px-56 py-32 shadow-[inset_0px_2px_3px_0px_#0000001a]">
 	<section class="flex flex-col items-center gap-4">
-		<h2 class="text-3xl lg:text-4xl font-bold">Here are the results of data exploration.</h2>
-		<p class="prose text-2xl lg:text-3xl text-center">
+		<h2 class="font-souvenirstd text-blue text-3xl lg:text-4xl font-bold">Here are the results of data exploration.</h2>
+		<p class="text-blue text-xl lg:text-2xl text-center">
 			With the data prepared, visualizations were generated. The confidence level for hypthesis
 			testing was set to 95%. This will determine if the SIM Card Registration deadline on July 30,
 			2023 has an effect on certain parameters of spam messages.
@@ -23,11 +23,11 @@
 	<section class="flex flex-col gap-8 w-full">
 		<ResultsCard title="Frequency of words">
 			<div class="flex flex-col gap-4">
-				<h3 class="text-lg font-bold text-center">
+				<h3 class="text-blue text-lg font-bold text-center">
 					There is an association between the period before and after the SIM card registration act
 					and the frequency of the top 10 most common words in spam messages.
 				</h3>
-				<p class="prose text-lg text-justify max-w-full">
+				<p class="text-blue text-lg text-justify max-w-full">
 					For the hypothesis testing, chi-square test for independence was used on the top 10 most
 					frequent words found in the spam messages and that resulted to p-value = 5e-23. The
 					primary goal of spam messages is to mislead people and incite thoughtless behaviors. This
@@ -46,7 +46,7 @@
 			</figure>
 			<hr class="h-px border-neutral-500 border-dotted border-t-4 w-1/2" />
 			<div class="flex flex-col gap-2">
-				<h3 class="text-xl lg:text-2xl font-bold text-center">Before</h3>
+				<h3 class="text-blue text-xl lg:text-2xl font-bold text-center">Before</h3>
 				<figure>
 					<img
 						src={wordFreqPre}
@@ -57,7 +57,7 @@
 			</div>
 			<hr class="h-px border-neutral-500 border-dotted border-t-4 w-1/2" />
 			<div class="flex flex-col gap-2">
-				<h3 class="text-xl lg:text-2xl font-bold text-center">After</h3>
+				<h3 class="text-blue text-xl lg:text-2xl font-bold text-center">After</h3>
 				<figure>
 					<img
 						src={wordFreqPost}
@@ -69,11 +69,11 @@
 		</ResultsCard>
 		<ResultsCard title="Frequency of spam messages received by day of the week">
 			<div class="flex flex-col gap-4">
-				<h3 class="text-lg font-bold text-center">
+				<h3 class="text-blue text-lg font-bold text-center">
 					There is no association between the period before and after the SIM card registration act
 					and the frequency of spam messages received by day of the week.
 				</h3>
-				<p class="prose text-lg text-justify max-w-full">
+				<p class="text-blue text-lg text-justify max-w-full">
 					For the hypthesis testing, chi-square test for independence resulted to p-value = 0.499.
 					This lack of effect could be attributed to the prominence of automated bots and scripts.
 					While regular people only work during the weekdays, bots are different. The day of the
@@ -83,7 +83,7 @@
 			<hr class="h-px border-neutral-500 border-dotted border-t-4 w-1/2" />
 			<div class="flex flex-col xl:flex-row gap-12 xl:gap-8">
 				<div class="flex flex-col gap-2">
-					<h3 class="text-xl lg:text-2xl font-bold text-center">Before</h3>
+					<h3 class="text-blue text-xl lg:text-2xl font-bold text-center">Before</h3>
 					<figure>
 						<img
 							src={dayWeeksPre}
@@ -94,7 +94,7 @@
 				</div>
 				<hr class="h-px border-neutral-500 border-dotted border-t-4 w-1/2 block xl:hidden" />
 				<div class="flex flex-col gap-2">
-					<h3 class="text-xl lg:text-2xl font-bold text-center">After</h3>
+					<h3 class="text-blue text-xl lg:text-2xl font-bold text-center">After</h3>
 					<figure>
 						<img
 							src={dayWeeksPost}
@@ -107,11 +107,11 @@
 		</ResultsCard>
 		<ResultsCard title="Top-level domains of links in spam messages">
 			<div class="flex flex-col gap-4">
-				<h3 class="text-lg font-bold text-center">
+				<h3 class="text-blue text-lg font-bold text-center">
 					There is an association between the period before and after the SIM card registration act
 					and the presence of links in spam messages.
 				</h3>
-				<p class="prose text-lg text-justify max-w-full">
+				<p class="text-blue text-lg text-justify max-w-full">
 					For the presence of links hypothesis testing, chi-square test for independence was used
 					and it yielded p-value = 0.023. Due to the ever increasing accessibility of the internet,
 					website links are now often seen in spam messages. If the words were meant to incite
@@ -129,7 +129,7 @@
 			</div>
 			<hr class="h-px border-neutral-500 border-dotted border-t-4 w-1/2" />
 			<div class="flex flex-col gap-2">
-				<h3 class="text-xl lg:text-2xl font-bold text-center">Before</h3>
+				<h3 class="text-blue text-xl lg:text-2xl font-bold text-center">Before</h3>
 				<figure>
 					<img
 						src={tldPre}
@@ -140,7 +140,7 @@
 			</div>
 			<hr class="h-px border-neutral-500 border-dotted border-t-4 w-1/2" />
 			<div class="flex flex-col gap-2">
-				<h3 class="text-xl lg:text-2xl font-bold text-center">After</h3>
+				<h3 class="text-blue text-xl lg:text-2xl font-bold text-center">After</h3>
 				<figure>
 					<img
 						src={tldPost}
@@ -152,11 +152,11 @@
 		</ResultsCard>
 		<ResultsCard title="Character length of spam messages">
 			<div class="flex flex-col gap-4">
-				<h3 class="text-lg font-bold text-center">
+				<h3 class="text-blue text-lg font-bold text-center">
 					There is no association between the period before and after the SIM card registration act
 					and the character length of spam messages.
 				</h3>
-				<p class="prose text-lg text-justify max-w-full">
+				<p class="text-blue text-lg text-justify max-w-full">
 					For the hypothesis test, Mann-Whitney U test was used and it yielded p-value = 0.639.
 					Normality testing showed that the pre and post-deadline samples were not normally
 					distributed, hence, a t-test would be unreliable. The distribution can be attributed the
@@ -167,7 +167,7 @@
 			</div>
 			<hr class="h-px border-neutral-500 border-dotted border-t-4 w-1/2" />
 			<div class="flex flex-col gap-2">
-				<h3 class="text-xl lg:text-2xl font-bold text-center">Before</h3>
+				<h3 class="text-blue text-xl lg:text-2xl font-bold text-center">Before</h3>
 				<figure>
 					<img
 						src={lengthPre}
@@ -178,7 +178,7 @@
 			</div>
 			<hr class="h-px border-neutral-500 border-dotted border-t-4 w-1/2" />
 			<div class="flex flex-col gap-2">
-				<h3 class="text-xl lg:text-2xl font-bold text-center">After</h3>
+				<h3 class="text-blue text-xl lg:text-2xl font-bold text-center">After</h3>
 				<figure>
 					<img
 						src={lengthPost}
@@ -190,7 +190,7 @@
 		</ResultsCard>
 	</section>
 
-	<p class="prose text-xl lg:text-2xl text-center mt-8">
+	<p class="text-blue text-xl lg:text-2xl text-center mt-8">
 		Want to learn more and inspect the process? Visit the Jupyter notebook.
 	</p>
 	<a

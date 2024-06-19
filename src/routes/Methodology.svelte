@@ -8,13 +8,13 @@
 	import MethodologyCard from '$lib/components/MethodologyCard.svelte';
 </script>
 
-<article id="methodology" class="flex flex-col gap-12 px-8 lg:px-28 xl:px-56 py-32 shadow-md">
+<article id="methodology" class="bg-lightgray-100 bg-paper bg-repeat  flex flex-col gap-12 px-8 lg:px-28 xl:px-56 py-32 shadow-[inset_0px_2px_3px_0px_#0000001a]">
 	<section class="flex flex-col items-center gap-4">
-		<h2 class="text-3xl lg:text-4xl font-bold">How was the data handled?</h2>
-		<p class="prose text-2xl lg:text-3xl">Through Python and its many libraries</p>
+		<h2 class="font-souvenirstd text-blue text-3xl lg:text-4xl font-bold">How was the data handled?</h2>
+		<p class="text-blue text-xl lg:text-2xl">Through Python and its many libraries...</p>
 	</section>
-	<div class="flex flex-row w-full gap-8 items-center border-l-[2em] border-info pl-6">
-		<h3 class="text-2xl text-info font-bold">Tools</h3>
+	<div class="flex flex-row w-full gap-8 items-center border-l-[2em] border-blue-300 pl-6">
+		<h3 class="font-souvenirstd text-blue text-2xl font-bold">Tools</h3>
 		<div class="flex flex-row flex-wrap gap-1 justify-end w-full">
 			<Badge>Python</Badge>
 			<Badge>Jupyter</Badge>
@@ -33,16 +33,16 @@
 	<section class="grid grid-cols-1 md:grid-cols-2 gap-8">
 		<MethodologyCard>
 			<img src={cleaningIcon} alt="" class="aspect-square w-80" />
-			<h3 class="text-2xl font-bold">Cleaning</h3>
+			<h3 class="font-souvenirstd text-blue text-2xl font-bold">Cleaning</h3>
 			<div class="flex flex-col gap-4">
-				<p class="prose text-lg text-justify">
+				<p class="text-blue text-lg text-justify">
 					The datasets were cleaned by filtering out entries that had insufficient data or contained
 					data which could not be used.
 					<br /><br />
 					For this step, the entries containing the following properties were filtered out of the initial
 					datasets:
 				</p>
-				<ul class="prose text-lg list-disc ml-8">
+				<ul class="text-blue text-lg list-disc ml-8">
 					<li>non-exact duplicates</li>
 					<li>non-spam (Data Set A)</li>
 					<li>no phone number</li>
@@ -56,13 +56,13 @@
 		</MethodologyCard>
 		<MethodologyCard>
 			<img src={preprocessingIcon} alt="" class="aspect-square w-80" />
-			<h3 class="text-2xl font-bold">Preprocessing</h3>
+			<h3 class="font-souvenirstd text-blue text-2xl font-bold">Preprocessing</h3>
 			<div class="flex flex-col gap-4">
-				<p class="prose text-lg text-justify">
+				<p class="text-blue text-lg text-justify">
 					With both datasets cleaned, they were combined into a single compiled dataset. From here,
 					several pieces of information were extrapolated from each entry including:
 				</p>
-				<ul class="prose text-lg list-disc ml-8">
+				<ul class="text-blue text-lg list-disc ml-8">
 					<li>year</li>
 					<li>month</li>
 					<li>day of week</li>
@@ -70,10 +70,10 @@
 					<li>SMS length</li>
 				</ul>
 				<br />
-				<p class="prose text-lg text-justify">
+				<p class="text-blue text-lg text-justify">
 					Lastly, the SMS messages were prepared for topic modeling by applying the following:
 				</p>
-				<ul class="prose text-lg list-disc ml-8">
+				<ul class="text-blue text-lg list-disc ml-8">
 					<li>emoticons were removed</li>
 					<li>text was translated to English</li>
 					<li>tokenization</li>
@@ -85,8 +85,8 @@
 		</MethodologyCard>
 		<MethodologyCard>
 			<img src={modelingIcon} alt="" class="aspect-square w-80" />
-			<h3 class="text-2xl font-bold">Topic Modeling</h3>
-			<p class="prose text-lg text-justify">
+			<h3 class="font-souvenirstd text-blue text-2xl font-bold">Topic Modeling</h3>
+			<p class="text-blue text-lg text-justify">
 				Using the prepared data obtained, topic modeling was performed on the SMS messages in the
 				dataset to form ten topic clusters.
 				<br /><br />
@@ -96,8 +96,8 @@
 		</MethodologyCard>
 		<MethodologyCard>
 			<img src={splittingIcon} alt="" class="aspect-square w-80" />
-			<h3 class="text-2xl font-bold">Dataset Splitting</h3>
-			<p class="prose text-lg text-justify">
+			<h3 class="font-souvenirstd text-blue text-2xl font-bold">Dataset Splitting</h3>
+			<p class="text-blue text-lg text-justify">
 				The deadline for SIM Card Registration was July 25, 2023. The processed data set was split
 				into two dataframe whether the message was received before or after this data. From each of
 				these two dataframes, 200 random samples were taken to equalize them for statistical
@@ -106,7 +106,7 @@
 		</MethodologyCard>
 	</section>
 	<section class="flex flex-col items-center gap-8">
-		<p class="prose text-2xl lg:text-3xl text-center">
+		<p class="text-blue text-xl lg:text-2xl text-center">
 			The Jupyter notebook illustrating this process is available on Google Colab.
 		</p>
 		<a
