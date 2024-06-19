@@ -4,20 +4,20 @@
 	import Background from './Background.svelte';
 	import Collection from './Collection.svelte';
 	import Methodology from './Methodology.svelte';
-    import Results from './Results.svelte';
+	import Results from './Results.svelte';
 	import Footer from './Footer.svelte';
 </script>
 
-<Top/>
+<Top />
 
-<Overview/>
+<Overview />
 
-<Background/>
+<Background />
 
-<Collection/>
+<Collection />
 
-<Methodology/>
+<Methodology />
 
-<Results/>
+<Results />
 
-<Footer/>
+<Footer />
