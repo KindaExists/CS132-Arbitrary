@@ -6,6 +6,16 @@
         font-display: swap;
         src:
         local('SouvenirStd'),
-        url('/fonts/SouvenirStd/Bold.otf') format('otf');
+        url('/fonts/SouvenirStd/Bold.woff2') format('woff2');
+    }
+
+    @font-face {
+        font-family: SouvenirStd;
+        font-style: italic;
+        font-weight: 700;
+        font-display: swap;
+        src:
+        local('SouvenirStd'),
+        url('/fonts/SouvenirStd/BoldItalic.woff2') format('woff2');
     }
 }
