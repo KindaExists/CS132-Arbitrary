@@ -15,6 +15,7 @@
 	import MethodologyCard from '$lib/components/MethodologyCard.svelte';
 
     import Results from './Results.svelte';
+	import Footer from './Footer.svelte';
 </script>
 
 <article id="top" class="bg-white flex flex-col lg:flex-row items-center px-8 lg:px-56 py-32 gap-4 lg:gap-12 shadow-md">
@@ -253,3 +254,5 @@
 </article>
 
 <Results/>
+
+<Footer/>
