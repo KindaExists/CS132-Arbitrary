@@ -13,6 +13,8 @@
 	import CollectionCard from '$lib/components/CollectionCard.svelte';
 	import Badge from '$lib/components/Badge.svelte';
 	import MethodologyCard from '$lib/components/MethodologyCard.svelte';
+
+    import Results from './Results.svelte';
 </script>
 
 <article id="top" class="bg-white flex flex-col lg:flex-row items-center px-8 lg:px-56 py-32 gap-4 lg:gap-12 shadow-md">
@@ -249,3 +251,5 @@
         <a target="_blank" href="https://colab.research.google.com/drive/1M8YJQMv2aG4FSf4ppGqhyp7ngR2VqLvG?usp=sharing" class="btn btn-accent btn-lg text-lg text-white shadow-md">Visit the Jupyter Notebook</a>
     </section>
 </article>
+
+<Results/>
