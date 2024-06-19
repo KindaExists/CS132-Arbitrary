@@ -1,0 +1,11 @@
+@layer base {
+    @font-face {
+        font-family: SouvenirStd;
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src:
+        local('SouvenirStd'),
+        url('/fonts/SouvenirStd/Bold.otf') format('otf');
+    }
+}

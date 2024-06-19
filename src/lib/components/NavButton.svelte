@@ -2,6 +2,6 @@
 	export let href: string;
 </script>
 
-<a {href} class="btn btn-sm lg:btn-md btn-primary hover:bg-neutral-700 lg:text-lg">
+<a {href} class="btn btn-sm lg:btn-md btn-primary hover:bg-white/10 hover:text-white lg:text-lg">
 	<slot />
 </a>

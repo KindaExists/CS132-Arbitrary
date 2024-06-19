@@ -1,0 +1,62 @@
+@layer base {
+    @font-face {
+        font-family: ClearSans;
+        font-style: normal;
+        font-weight: 100;
+        font-display: swap;
+        src:
+            local('ClearSans'),
+            url('/fonts/ClearSans/Thin.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: ClearSans;
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src:
+            local('ClearSans'),
+            url('/fonts/ClearSans/Light.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: ClearSans;
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src:
+            local('ClearSans'),
+            url('/fonts/ClearSans/Regular.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: ClearSans;
+        font-style: italic;
+        font-weight: 400;
+        font-display: swap;
+        src:
+            local('ClearSans'),
+            url('/fonts/ClearSans/Italic.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: ClearSans;
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src:
+            local('ClearSans'),
+            url('/fonts/ClearSans/Bold.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: ClearSans;
+        font-style: italic;
+        font-weight: 700;
+        font-display: swap;
+        src:
+            local('ClearSans'),
+            url('/fonts/ClearSans/BoldItalic.woff') format('woff');
+    }
+}
+
