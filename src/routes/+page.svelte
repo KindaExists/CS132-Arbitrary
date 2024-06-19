@@ -25,7 +25,7 @@
             This is our project, <br/>
             <strong class="font-bold hover:text-accent transition-colors">SIM Spam Slam</strong>
         </h1>
-        <p class="prose text-2xl">
+        <p class="prose text-2xl text-justify ">
             Like the popular canned food brand it is named after, spam texts can come in all
             kinds of varieties. This data project aims to uncover the commonalities between
             these messages and analyze the trends and patterns that they follow.
@@ -85,7 +85,7 @@
     </section>
 </article>
 
-<article id="background" class="flex flex-col gap-12 px-8 lg:px-56 py-32 shadow-md">
+<article id="background" class="flex flex-col gap-12 px-8 lg:px-28 xl:px-56 py-32 shadow-md">
     <section class="flex flex-col items-center gap-4">
         <h2 class="text-3xl lg:text-4xl font-bold">Background</h2>
         <h3 class="text-2xl text-center font-bold">
